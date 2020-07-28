@@ -6,7 +6,8 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
+<jsp:forward page="/emps"></jsp:forward>
+<%--<html>
 <head>
     <title>Title</title>
     <!--jQuery-->
@@ -23,4 +24,4 @@
 <body>
     <button class="btn btn-success">按钮</button>
 </body>
-</html>
+</html>--%>
