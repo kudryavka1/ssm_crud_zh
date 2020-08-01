@@ -1,12 +1,19 @@
 package com.atguigu.crud.bean;
 
+import org.hibernate.validator.constraints.Email;
+
+import javax.validation.constraints.Pattern;
+
 public class Employee {
     private Integer empId;
 
+    @Pattern(regexp = "[0-9a-zA-Z\\u4E00-\\u9FA5]+",
+            message = "用户名必须是4-10个字符")
     private String empName;
 
     private String gender;
 
+    @Email(message = "邮箱格式不正确")
     private String email;
 
     private Integer dId;
